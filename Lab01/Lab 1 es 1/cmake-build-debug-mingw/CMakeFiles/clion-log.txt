@@ -1,0 +1,10 @@
+C:\Users\Mattia\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -DCMAKE_MAKE_PROGRAM=C:/Users/Mattia/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/ninja/win/ninja.exe -G "Ninja Multi-Config" -S "C:\Users\Mattia\OneDrive\Documenti\Università\Algoritmi e Strutture Dati\Lab 1 es 1" -B "C:\Users\Mattia\OneDrive\Documenti\Università\Algoritmi e Strutture Dati\Lab 1 es 1\cmake-build-debug-mingw"
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Mattia/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Mattia/OneDrive/Documenti/Università/Algoritmi e Strutture Dati/Lab 1 es 1/cmake-build-debug-mingw

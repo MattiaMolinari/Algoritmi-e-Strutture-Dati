@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage[dvipsnames, table,xcdraw]{xcolor}
+\usepackage[automark,
+autooneside=false,% <- needed if you want to use \leftmark and \rightmark in a onesided document
+headsepline
+]{scrlayer-scrpage}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{epigraph} 
+\usepackage{geometry}
+\geometry{margin=3cm}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,epsfig,epstopdf,titling,url,array}
+\usepackage{tikz}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{multicol}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{black}}
+
+
+\usepackage{caption}
+\pagestyle{empty}
+
+
+\lstset{extendedchars=false, language=c, showstringspaces=false, showspaces=false, showlines=false, showtabs = false, frame=single, basicstyle=\sffamily, moredelim=**[is][\color{red}]{§}{§},moredelim=**[is][\color{blue}]{@}{@},moredelim=**[is][\color{ForestGreen}]{£}{£},tabsize=4,morestring=*[b]", escapechar=`}
+
+
+
+\begin{document}
+
+\begin{center}
+	\large	Mattia Molinari - 296544
+	\end{center}
+\text{\large \textbf{Laboratorio 9 esercizio 1: Grafi e DAG}}\\
+
+La soluzione proposta è composta da cinque file:
+\begin{itemize}
+	\item \textbf{st.h}: definizione della tabella di simboli come ADT di I classe (tipo \lstinline|st_t|) e prototipi delle funzioni ad essa associate (vedere commenti per dettagli);
+
+	\item \textbf{st.c}: implementazione della tabella di simboli secondo il modello del vettore non ordinato di stringhe e implementazione delle funzioni relative;
+	\item \textbf{graph.h}: definizione del grafo come ADT di I classe (tipo \lstinline|graph_t|) e prototipi delle funzioni ad esso associate (vedere commenti per dettagli);
+	\item \textbf{graph.c}: implementazione del grafo orientato come \lstinline|struct| con i seguenti campi:
+	\begin{itemize}
+		\item \lstinline|st_t st|: tabella di simboli, possibile grazie a \lstinline|#include "st.h"|
+		\item \lstinline|edge_t *edges|: elenco degli archi, il tipo \lstinline|edge_t| viene dichiarato nel medesimo file come \lstinline|struct| che ha come campi l'indice del vertice di partenza, quello del vertice di arrivo e il peso dell'arco (tutti interi)
+		\item \lstinline|int E, V|: numero di archi e vertici
+		\item \lstinline|list_t *adj|: vettore di liste per le adiacenze, il tipo \lstinline|list_t| viene dichiarato nel medesimo file come \lstinline|struct| con puntatore a testa della lista
+	\end{itemize}
+	Risulta particolarmente rilevante l'implementazione delle seguenti funzioni:
+	\begin{itemize}
+		\item \lstinline|int GRAPHcheckDAG(graph_t G, int *mark, int *pre, int *post)|: funzione che viene opportunamente chiamata da main.c per controllare se la rimozione degli archi segnati in \lstinline|mark| sia un DAG o meno; per far ciò si utilizzano le funzioni \lstinline|GRAPHremoveEdges| e \lstinline|GRAPHaddEdges| rispettivamente per rimuovere e poi aggiungere nuovamente gi archi marcati alla lista delle adiacenze con un controllo intermedio di \lstinline|dfsR|: quest'ultima è stata opportunamente modificata affinché restituisca un valore se si trovano cicli [0] o meno [1] (vedere commenti per dettagli)
+		\item \lstinline|void GRAPHmaximumPath(graph_t G, FILE *fout)|: funzione che utilizza \lstinline|TSdfsR| tratta dai lucidi per trovare l'ordine topologico dei vertici del DAG e calcolare le distanze massime di ognuno di essi da ogni sorgente
+		
+	\end{itemize}
+	\item\textbf{ main.c}: file principale.
+\end{itemize}
+	
+	La soluzione sfrutta il modello del calcolo combinatorio dell'\textbf{insieme delle parti} per generare insiemi di archi: in particolare si utilizza il modello che richiama le \underline{combinazioni semplici} in quanto permette la generazione di insiemi di cardinalità crescente e dunque di trovare prima quelli di cardinalità minima.
+	Più precisamente i passaggi sono i seguenti:
+	\begin{enumerate}
+		\item inizializzazione variabili utili e grafo \lstinline|G| caricando le informazioni da file;
+		\item allocazione variabili: da notare il vettore \lstinline|mark|, la cui posizione $i$-esima marca l'arco di indice $i$ nel vettore \lstinline|edges| (visibile solo in graph.c) come appartenente [1] o meno [0] all'insieme;
+		\item si controlla che il grafo non sia già un DAG (se lo è si stampa un messaggio a terminale e si chiede se si vuole proseguire comunque);
+		\item si utilizza la funzione \lstinline|powerset| in un opportuno ciclo per generare gli insiemi partendo da quelli a cardinalità minore;
+		\item all'interno della funzione \lstinline|powerset| si controlla per ogni insieme generato se la rimozione degli archi marcati genererebbe un DAG: in caso di risposta affermativa, si aggiorna il flag ad 1 e si stampa la cardinalità \lstinline|k| raggiunta, per poi stampare l'insieme corrente; la funzione prosegue generando solo più gli insiemi con cardinalità \lstinline|k|, stampando e confrontando il peso totale con \lstinline|*maxWt| solo di quelli che se rimossi generano un DAG (si aggiorna eventualmente la soluzione ottima \lstinline|sol|);
+		\item terminata la ricorsione e il ciclo \lstinline|for|, si stampa la soluzione finale con relativo peso;
+		\item si rimuovono definitivamente gli archi marcati e si stampano le distanze massime da ogni nodo sorgente verso ogni nodo del DAG;
+		\item liberazione spazio allocato.
+	\end{enumerate}
+	
+
+
+\end{document}

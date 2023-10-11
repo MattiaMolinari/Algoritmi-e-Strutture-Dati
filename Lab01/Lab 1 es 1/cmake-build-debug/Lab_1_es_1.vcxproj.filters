@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mattia\OneDrive\Documenti\Università\Algoritmi e Strutture Dati\Lab 1 es 1\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mattia\OneDrive\Documenti\Università\Algoritmi e Strutture Dati\Lab 1 es 1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B4C57FC-4977-31A0-ABFF-47CDFE7D678D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

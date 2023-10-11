@@ -1,0 +1,160 @@
+FILE very_very_easy_test_set.txt
+TEST #1
+ zaffiri:  2, rubini:  1, topazi:  2, smeraldi:  2, TOT:  7
+ Collana di massima lunghezza  7
+  t z z r s s t 
+
+
+FILE very_easy_test_set.txt
+TEST #1
+ zaffiri:  2, rubini:  1, topazi:  2, smeraldi:  2, TOT:  7
+ Collana di massima lunghezza  7
+  t z z r s s t 
+TEST #2
+ zaffiri:  3, rubini:  2, topazi:  3, smeraldi:  3, TOT: 11
+ Collana di massima lunghezza 11
+  t z z z r t r s s s t 
+TEST #3
+ zaffiri:  6, rubini:  2, topazi:  2, smeraldi:  3, TOT: 13
+ Collana di massima lunghezza 13
+  z z z z z z r t r s s s t 
+TEST #4
+ zaffiri:  6, rubini:  4, topazi:  4, smeraldi:  3, TOT: 17
+ Collana di massima lunghezza 17
+  z z z z z z r t r t r t r s s s t 
+TEST #5
+ zaffiri:  4, rubini:  3, topazi:  7, smeraldi:  4, TOT: 18
+ Collana di massima lunghezza 15
+  t z z z z r t r t r s s s s t 
+TEST #6
+ zaffiri:  6, rubini:  5, topazi:  9, smeraldi:  7, TOT: 27
+ Collana di massima lunghezza 24
+  t z z z z z z r t r t r t r t r s s s s s s s t 
+
+
+FILE easy_test_set.txt
+TEST #1
+ zaffiri:  5, rubini:  7, topazi:  4, smeraldi: 10, TOT: 26
+ Collana di massima lunghezza 24
+  z z z z z r t r t r t r t r s s s s s s s s s s 
+TEST #2
+ zaffiri:  6, rubini:  8, topazi: 10, smeraldi:  1, TOT: 25
+ Collana di massima lunghezza 24
+  t z z z z z z r t r t r t r t r t r t r t r s t 
+TEST #3
+ zaffiri:  3, rubini:  1, topazi:  6, smeraldi: 10, TOT: 20
+ Collana di massima lunghezza 16
+  t z z z r s s s s s s s s s s t 
+TEST #4
+ zaffiri:  4, rubini:  4, topazi:  2, smeraldi:  1, TOT: 11
+ Collana di massima lunghezza 10
+  z z z z r t r t r s 
+TEST #5
+ zaffiri:  7, rubini:  2, topazi:  4, smeraldi: 10, TOT: 23
+ Collana di massima lunghezza 22
+  t z z z z z z z r t r s s s s s s s s s s t 
+TEST #6
+ zaffiri:  8, rubini:  8, topazi:  4, smeraldi:  6, TOT: 26
+ Collana di massima lunghezza 23
+  z z z z z z z z r t r t r t r t r s s s s s s 
+TEST #7
+ zaffiri:  6, rubini:  1, topazi:  4, smeraldi:  4, TOT: 15
+ Collana di massima lunghezza 13
+  t z z z z z z r s s s s t 
+TEST #8
+ zaffiri:  8, rubini:  3, topazi:  6, smeraldi:  4, TOT: 21
+ Collana di massima lunghezza 19
+  t z z z z z z z z r t r t r s s s s t 
+TEST #9
+ zaffiri:  7, rubini:  7, topazi:  4, smeraldi:  2, TOT: 20
+ Collana di massima lunghezza 18
+  z z z z z z z r t r t r t r t r s s 
+TEST #10
+ zaffiri:  1, rubini:  3, topazi:  7, smeraldi:  1, TOT: 12
+ Collana di massima lunghezza  9
+  t z r t r t r s t 
+TEST #11
+ zaffiri: 10, rubini: 10, topazi:  9, smeraldi: 10, TOT: 39
+ Collana di massima lunghezza 39
+  z z z z z z z z z z r t r t r t r t r t r t r t r t r t r s s s s s s s s s s 
+TEST #12
+ zaffiri:  8, rubini:  8, topazi:  8, smeraldi:  6, TOT: 30
+ Collana di massima lunghezza 30
+  z z z z z z z z r t r t r t r t r t r t r t r s s s s s s t 
+TEST #13
+ zaffiri:  9, rubini:  6, topazi: 10, smeraldi:  5, TOT: 30
+ Collana di massima lunghezza 27
+  t z z z z z z z z z r t r t r t r t r t r s s s s s t 
+TEST #14
+ zaffiri:  6, rubini: 10, topazi:  9, smeraldi:  5, TOT: 30
+ Collana di massima lunghezza 30
+  z z z z z z r t r t r t r t r t r t r t r t r t r s s s s s 
+TEST #15
+ zaffiri:  9, rubini:  6, topazi:  9, smeraldi:  9, TOT: 33
+ Collana di massima lunghezza 31
+  t z z z z z z z z z r t r t r t r t r t r s s s s s s s s s t 
+
+
+FILE hard_test_set.txt
+TEST #1
+ zaffiri: 19, rubini:  6, topazi:  8, smeraldi:  5, TOT: 38
+ Collana di massima lunghezza 37
+  t z z z z z z z z z z z z z z z z z z z r t r t r t r t r t r s s s s s t 
+TEST #2
+ zaffiri: 19, rubini: 14, topazi:  5, smeraldi: 11, TOT: 49
+ Collana di massima lunghezza 41
+  z z z z z z z z z z z z z z z z z z z r t r t r t r t r t r s s s s s s s s s s s 
+TEST #3
+ zaffiri: 14, rubini: 14, topazi:  5, smeraldi:  8, TOT: 41
+ Collana di massima lunghezza 33
+  z z z z z z z z z z z z z z r t r t r t r t r t r s s s s s s s s 
+TEST #4
+ zaffiri: 12, rubini: 16, topazi:  5, smeraldi: 14, TOT: 47
+ Collana di massima lunghezza 37
+  z z z z z z z z z z z z r t r t r t r t r t r s s s s s s s s s s s s s s 
+TEST #5
+ zaffiri: 12, rubini: 17, topazi: 20, smeraldi: 20, TOT: 69
+ Collana di massima lunghezza 67
+  t z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s s s s s s s s s s s t 
+TEST #6
+ zaffiri: 13, rubini: 11, topazi: 14, smeraldi: 18, TOT: 56
+ Collana di massima lunghezza 54
+  t z z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s s s s s s s s s t 
+TEST #7
+ zaffiri:  7, rubini: 14, topazi: 12, smeraldi: 10, TOT: 43
+ Collana di massima lunghezza 42
+  z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s 
+TEST #8
+ zaffiri: 13, rubini: 20, topazi: 12, smeraldi: 17, TOT: 62
+ Collana di massima lunghezza 55
+  z z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s s s s s s s s 
+TEST #9
+ zaffiri: 17, rubini: 18, topazi:  6, smeraldi:  9, TOT: 50
+ Collana di massima lunghezza 39
+  z z z z z z z z z z z z z z z z z r t r t r t r t r t r t r s s s s s s s s s 
+TEST #10
+ zaffiri:  5, rubini:  5, topazi: 15, smeraldi: 19, TOT: 44
+ Collana di massima lunghezza 35
+  t z z z z z r t r t r t r t r s s s s s s s s s s s s s s s s s s s t 
+TEST #11
+ zaffiri: 18, rubini: 12, topazi: 20, smeraldi: 17, TOT: 67
+ Collana di massima lunghezza 60
+  t z z z z z z z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s s s s s s s s t 
+TEST #12
+ zaffiri: 13, rubini:  6, topazi: 19, smeraldi:  6, TOT: 44
+ Collana di massima lunghezza 32
+  t z z z z z z z z z z z z z r t r t r t r t r t r s s s s s s t 
+TEST #13
+ zaffiri: 17, rubini: 20, topazi: 15, smeraldi: 19, TOT: 71
+ Collana di massima lunghezza 67
+  z z z z z z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s s s s s s s s s s s s 
+TEST #14
+ zaffiri: 12, rubini: 18, topazi: 17, smeraldi:  8, TOT: 55
+ Collana di massima lunghezza 55
+  z z z z z z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s s 
+TEST #15
+ zaffiri:  7, rubini: 20, topazi: 12, smeraldi:  7, TOT: 46
+ Collana di massima lunghezza 39
+  z z z z z z z r t r t r t r t r t r t r t r t r t r t r t r t r s s s s s s s 
+
+

@@ -1,0 +1,10 @@
+^C:\USERS\MATTIA\ONEDRIVE\DOCUMENTI\UNIVERSITÀ\ALGORITMI E STRUTTURE DATI\LAB 1 ES 1\CMAKE-BUILD-DEBUG\CMAKEFILES\68B0CD4B941B3D52D215E8511B8A79CD\GENERATE.STAMP.RULE
+setlocal
+C:\Users\Mattia\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe "-SC:/Users/Mattia/OneDrive/Documenti/Università/Algoritmi e Strutture Dati/Lab 1 es 1" "-BC:/Users/Mattia/OneDrive/Documenti/Università/Algoritmi e Strutture Dati/Lab 1 es 1/cmake-build-debug" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Mattia/OneDrive/Documenti/Università/Algoritmi e Strutture Dati/Lab 1 es 1/cmake-build-debug/Lab_1_es_1.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
